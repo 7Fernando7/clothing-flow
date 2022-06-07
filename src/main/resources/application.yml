@@ -1,0 +1,11 @@
+server:
+  port: 8050
+
+feign:
+  client:
+    config:
+      default:
+        loggerLevel: full
+        
+clothingRepo:
+  url: "http://localhost:8040/clothing"
