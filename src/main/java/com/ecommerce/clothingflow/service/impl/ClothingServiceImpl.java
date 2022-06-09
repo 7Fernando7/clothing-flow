@@ -29,4 +29,20 @@ public class ClothingServiceImpl implements ClothingService {
     return clothing;
   }
 
+  @Override
+  public ClothingDTO updateClothing(final ClothingDTO clothingDTO) {
+
+    final ClothingDTO clothing = clothingClient.updateClothing(clothingDTO);
+
+    return clothing;
+  }
+
+  @Override
+  public ClothingDTO deleteClothing(final ClothingDTO clothingDeleteDTO) {
+
+    final ClothingDTO clothing = clothingClient.deleteClothing(clothingDeleteDTO);
+
+    return null;
+  }
+
 }

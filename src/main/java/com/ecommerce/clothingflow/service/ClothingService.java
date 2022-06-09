@@ -8,4 +8,8 @@ public interface ClothingService {
 
   ClothingDTO registerProducts(ClothingDTO clothing);
 
+  ClothingDTO updateClothing(ClothingDTO clothingDTO);
+
+  ClothingDTO deleteClothing(ClothingDTO clothingDeleteDTO);
+
 }
